@@ -1,0 +1,6 @@
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+# ローカル確認用。本番では絶対に設定しない
+DEV_AUTH=1
+# Workers AI に接続できないローカル環境でタグを仮生成する
+MOCK_AI=1

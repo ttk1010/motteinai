@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#F5F6F8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <title>Mottenai</title>
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* JS 読み込み前に出すアプリの外枠スケルトン */
+      html{background:#F5F6F8;}body{margin:0;}
+      #boot{position:fixed;inset:0;overflow:hidden;font-family:system-ui;}
+      #boot .b{position:absolute;border-radius:999px;filter:blur(60px);opacity:.55}
+      #boot .sk{position:absolute;border-radius:16px;background:rgba(255,255,255,.6);box-shadow:inset 0 1px 0 #fff,0 6px 24px rgba(20,24,40,.06);overflow:hidden}
+      #boot .sk::after{content:"";position:absolute;inset:0;transform:translateX(-100%);background:linear-gradient(100deg,transparent 20%,rgba(255,255,255,.85) 50%,transparent 80%);animation:bootsh 1.4s ease-in-out infinite}
+      @keyframes bootsh{to{transform:translateX(100%)}}
+      @media (prefers-reduced-motion: reduce){#boot .sk::after{animation:none}}
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div id="boot" aria-hidden="true">
+        <div class="b" style="width:320px;height:320px;left:-80px;top:-60px;background:#CFE3FF"></div>
+        <div class="b" style="width:280px;height:280px;right:-90px;top:260px;background:#FFE1EC"></div>
+        <div class="sk" style="left:20px;top:calc(env(safe-area-inset-top) + 24px);width:140px;height:28px"></div>
+        <div class="sk" style="right:20px;top:calc(env(safe-area-inset-top) + 20px);width:96px;height:36px;border-radius:999px"></div>
+        <div class="sk" style="left:20px;right:20px;top:calc(env(safe-area-inset-top) + 84px);height:min(118vw,520px);border-radius:28px"></div>
+        <div class="sk" style="left:16px;right:16px;bottom:calc(env(safe-area-inset-bottom) + 12px);height:64px;border-radius:999px"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
