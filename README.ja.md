@@ -184,3 +184,7 @@ Mottenai は、ファッションのSNSでも、買い物への誘導でもあ�
 ## ライセンス
 
 [MIT](LICENSE) © 2026 ttk1010
+
+### クレジット
+
+[紹介動画](docs/assets/demo.mp4)のナレーションは、[Open JTalk](https://open-jtalk.sourceforge.net/)（BSD-3-Clause）と HTS 音声 `nitech_jp_atr503_m001`（© 名古屋工業大学、[CC BY 3.0](https://creativecommons.org/licenses/by/3.0/deed.ja)）で合成しています。

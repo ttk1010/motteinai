@@ -174,3 +174,7 @@ Small, issue-driven changes are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 ## License
 
 [MIT](LICENSE) © 2026 ttk1010
+
+### Credits
+
+The narration in the [demo video](docs/assets/demo.mp4) was synthesized with [Open JTalk](https://open-jtalk.sourceforge.net/) (BSD-3-Clause) using the HTS voice `nitech_jp_atr503_m001`, © Nagoya Institute of Technology, licensed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
