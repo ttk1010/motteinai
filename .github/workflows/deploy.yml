@@ -44,8 +44,8 @@ jobs:
           GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
         run: |
           if [ -z "$GOOGLE_CLIENT_ID" ] || [ -z "$GOOGLE_CLIENT_SECRET" ]; then
-            echo "::error::GOOGLE_CLIENT_ID / GOOGLE_CLIENT_SECRET が GitHub のシークレットにありません"
-            exit 1
+            echo "::warning::GOOGLE_CLIENT_ID / GOOGLE_CLIENT_SECRET が未登録のため、Google ログインの設定を飛ばしました（docs/SETUP_GUIDE.md の手順 4）"
+            exit 0
           fi
           node -e 'require("fs").writeFileSync("secrets.json", JSON.stringify({GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET: process.env.GOOGLE_CLIENT_SECRET}))'
           npx wrangler secret bulk secrets.json
