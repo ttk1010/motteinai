@@ -13,8 +13,7 @@
     {
       "binding": "DB",
       "database_name": "mottenai",
-      // `wrangler d1 create mottenai` の結果に置き換える
-      "database_id": "00000000-0000-0000-0000-000000000000",
+      "database_id": "4d0ca3cc-0808-41d2-9468-2f4efbad9b0a",
       "migrations_dir": "migrations"
     }
   ],
