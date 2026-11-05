@@ -187,4 +187,6 @@ Mottenai は、ファッションのSNSでも、買い物への誘導でもあ�
 
 ### クレジット
 
-[紹介動画](docs/assets/demo.mp4)のナレーションは、[Open JTalk](https://open-jtalk.sourceforge.net/)（BSD-3-Clause）と HTS 音声 `nitech_jp_atr503_m001`（© 名古屋工業大学、[CC BY 3.0](https://creativecommons.org/licenses/by/3.0/deed.ja)）で合成しています。
+[紹介動画](docs/assets/demo.mp4)のナレーション：**VOICEVOX:No.7**（スタイル：ノーマル）。[VOICEVOX](https://voicevox.hiroshiba.jp/) で生成しています。
+
+> 紹介動画（`docs/assets/demo.mp4`）は MIT ライセンスの**対象外**です。ナレーションは No.7 の音声ライブラリを非商用で利用して作成したもので、[No.7 の利用規約](https://voiceseven.com/#j0200) と [VOICEVOX 音声モデル利用規約](https://github.com/VOICEVOX/voicevox_vvm/blob/main/README.md) に従います。音声を商用で利用する場合は、No.7 製作委員会への事前確認が必要です。

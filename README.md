@@ -177,4 +177,6 @@ Small, issue-driven changes are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### Credits
 
-The narration in the [demo video](docs/assets/demo.mp4) was synthesized with [Open JTalk](https://open-jtalk.sourceforge.net/) (BSD-3-Clause) using the HTS voice `nitech_jp_atr503_m001`, © Nagoya Institute of Technology, licensed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
+Narration in the [demo video](docs/assets/demo.mp4): **VOICEVOX:No.7** (style: ノーマル), generated with [VOICEVOX](https://voicevox.hiroshiba.jp/).
+
+> The demo video (`docs/assets/demo.mp4`) is **not** covered by the MIT license. Its narration was generated with the No.7 voice library for non-commercial use and remains subject to the [No.7 terms](https://voiceseven.com/#j0200) and the [VOICEVOX voice model terms](https://github.com/VOICEVOX/voicevox_vvm/blob/main/README.md). Commercial use of the audio requires prior confirmation from the No.7 production committee.
