@@ -18,6 +18,8 @@
        alt="Four phone screens: today's outfit built from owned clothes; a pre-purchase check saying 'skip' because a near-identical white T-shirt is already owned; a check saying 'buy' with +3 new outfits; and a ranked list of items worth buying.">
 </p>
 
+<p align="center"><a href="docs/assets/demo.mp4">▶ Watch the 30-second demo</a></p>
+
 ## What is this?
 
 Mottenai is a mobile-first closet app for one specific problem: **you go shopping, can't tell what to buy, and come home with something you already own or can't wear with anything.**
