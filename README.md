@@ -14,11 +14,12 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
 <p align="center">
-  <img src="docs/assets/cover.png" width="820"
-       alt="Four phone screens: today's outfit built from owned clothes; a pre-purchase check saying 'skip' because a near-identical white T-shirt is already owned; a check saying 'buy' with +3 new outfits; and a ranked list of items worth buying.">
+  <a href="docs/assets/demo.mp4">
+    <img src="docs/assets/demo.gif" width="820" alt="30-second demo: register clothes by photo, today's outfit, a pre-purchase check that says 'skip' for a near-identical white T-shirt and 'buy' for a camel cardigan with +3 outfits, items worth buying, and the closet.">
+  </a>
 </p>
 
-<p align="center"><a href="docs/assets/demo.mp4">▶ Watch the 30-second demo</a></p>
+<p align="center"><a href="docs/assets/demo.mp4">▶ Watch with sound (30 s, MP4)</a></p>
 
 ## What is this?
 

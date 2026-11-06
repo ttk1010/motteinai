@@ -14,11 +14,12 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
 <p align="center">
-  <img src="docs/assets/cover.png" width="820"
-       alt="スマホの画面4枚。手持ちの服で組んだ今日のコーデ、ほぼ同じ白Tを持っているので「見送り」と出た買う前チェック、＋3通りで「買い」と出た買う前チェック、買うと良い服のランキング。">
+  <a href="docs/assets/demo.mp4">
+    <img src="docs/assets/demo.gif" width="820" alt="30秒の紹介動画：写真で服を登録、今日のコーデ、ほぼ同じ白Tは「見送り」・キャメルのカーディガンは＋3通りで「買い」と出る買う前チェック、買うと良い服、クローゼット。">
+  </a>
 </p>
 
-<p align="center"><a href="docs/assets/demo.mp4">▶ 30秒の紹介動画を見る</a></p>
+<p align="center"><a href="docs/assets/demo.mp4">▶ 音声付きで見る（30秒・MP4）</a></p>
 
 ## Mottenai とは
 
