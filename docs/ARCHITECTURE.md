@@ -1,6 +1,6 @@
 # Architecture
 
-Mottenai の構成と、データの流れです。技術を選んだ理由は [04-tech-stack.md](04-tech-stack.md)、個々の設計判断は [adr/](adr/) にあります。
+Motteinai の構成と、データの流れです。技術を選んだ理由は [04-tech-stack.md](04-tech-stack.md)、個々の設計判断は [adr/](adr/) にあります。
 
 ## 全体
 

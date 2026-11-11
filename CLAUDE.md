@@ -1,4 +1,4 @@
-# Mottenai
+# Motteinai
 
 AI（Claude Code）がこのリポジトリで開発するときの指針です。実装を判断する前に、README.ja.md と docs/ARCHITECTURE.md を読むこと。
 

@@ -1,5 +1,5 @@
 {
-  "name": "mottenai",
+  "name": "motteinai",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,8 +9,8 @@
     "test": "vitest run",
     "typecheck": "tsc -b",
     "lint": "biome check .",
-    "db:migrate:local": "wrangler d1 migrations apply mottenai --local",
-    "db:migrate:remote": "wrangler d1 migrations apply mottenai --remote",
+    "db:migrate:local": "wrangler d1 migrations apply motteinai --local",
+    "db:migrate:remote": "wrangler d1 migrations apply motteinai --remote",
     "deploy": "npm run build && wrangler deploy",
     "cf-typegen": "wrangler types worker/env.d.ts --env-interface Env"
   },

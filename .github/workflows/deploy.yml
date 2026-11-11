@@ -35,7 +35,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npx vite build
-      - run: npx wrangler d1 migrations apply mottenai --remote
+      - run: npx wrangler d1 migrations apply motteinai --remote
       - run: npx wrangler deploy
       # GitHub のシークレットを Worker のシークレットへ反映する（値はログに出ない）
       - name: Sync Worker secrets

@@ -217,7 +217,7 @@ api.get("/export", async (c) => {
       wants: wants.results,
     },
     200,
-    { "content-disposition": 'attachment; filename="mottenai-export.json"' },
+    { "content-disposition": 'attachment; filename="motteinai-export.json"' },
   );
 });
 
@@ -321,7 +321,7 @@ api.post("/import-url", async (c) => {
   }
   if (!["http:", "https:"].includes(target.protocol)) return c.json({ error: "invalid url" }, 400);
   const fetchOpts = {
-    headers: { "user-agent": "Mozilla/5.0 (compatible; MottenaiBot/1.0)" },
+    headers: { "user-agent": "Mozilla/5.0 (compatible; MotteinaiBot/1.0)" },
     signal: AbortSignal.timeout(8000),
   };
   try {

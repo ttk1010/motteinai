@@ -1,14 +1,14 @@
 <p align="center">
-  <img src="docs/assets/icon.png" width="96" alt="Mottenai のアイコン">
+  <img src="docs/assets/icon.png" width="96" alt="Motteinai のアイコン">
 </p>
 
-# Mottenai
+# Motteinai
 
 > 買う前に、クローゼットを確かめる。
 
 [English](README.md) · **日本語**
 
-[![CI / Deploy](https://github.com/ttk1010/mottenai/actions/workflows/deploy.yml/badge.svg)](https://github.com/ttk1010/mottenai/actions/workflows/deploy.yml)
+[![CI / Deploy](https://github.com/ttk1010/motteinai/actions/workflows/deploy.yml/badge.svg)](https://github.com/ttk1010/motteinai/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=white)](https://workers.cloudflare.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -21,9 +21,9 @@
 
 <p align="center"><a href="docs/assets/demo.mp4">▶ 音声付きで見る（30秒・MP4）</a></p>
 
-## Mottenai とは
+## Motteinai とは
 
-服を買いに行っても何を買えばいいか分からず、**似た服や、手持ちと組み合わせづらい服を買ってしまう**。Mottenai はこの悩みのためのスマホ向けクローゼット管理アプリです。
+服を買いに行っても何を買えばいいか分からず、**似た服や、手持ちと組み合わせづらい服を買ってしまう**。Motteinai はこの悩みのためのスマホ向けクローゼット管理アプリです。
 
 店で服を撮ると、クローゼットの中身すべてと比べて数秒で答えます。
 
@@ -34,7 +34,7 @@
 
 ほかに、**買うと良い服**を「足すと何通り増えるか」の順に並べます。**今日のコーデ**は天気に合わせて出し、1案は必ず出番のない服を使います。
 
-名前は「もったいない」と「持ってない」を掛けています。持っている物ではなく、持っていない物を買う。
+名前は「もったいない（mottainai）」と「持っていない（motteinai）」を掛けています。綴りは1文字違いです。持っている物ではなく、持っていない物を買う。
 
 > 📖 README は日本語・英語の2言語です。設計ドキュメント（`docs/`・ADR）とアプリの画面は**日本語**です。
 
@@ -111,7 +111,7 @@ npm run lint
 3. 公開
 4. Google のシークレットの反映
 
-公開先は `https://mottenai.<サブドメイン>.workers.dev` です。
+公開先は `https://motteinai.<サブドメイン>.workers.dev` です。
 
 うまくいかないときは [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) を見てください。
 
@@ -145,7 +145,7 @@ Cloudflare Worker（Hono）
 
 ## 考え方
 
-Mottenai は、ファッションのSNSでも、買い物への誘導でもありません。自分で思い出せないとき、代わりにクローゼットを覚えておく相談相手です。
+Motteinai は、ファッションのSNSでも、買い物への誘導でもありません。自分で思い出せないとき、代わりにクローゼットを覚えておく相談相手です。
 
 - **決める瞬間に答える**：家の朝ではなく、店頭で
 - **形容詞より数字**：`似ている 87%`、`＋12通り`。キャッチコピーは入れない

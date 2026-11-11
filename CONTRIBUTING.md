@@ -1,4 +1,4 @@
-# Contributing to Mottenai
+# Contributing to Motteinai
 
 Thanks for your interest! This project values small, reviewable changes and keeping the app quiet: no marketing copy, numbers over adjectives.
 

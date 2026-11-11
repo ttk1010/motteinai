@@ -1,6 +1,6 @@
 # セットアップ手順書（Cloudflare・Google・GitHub）
 
-Mottenai を自分の Cloudflare アカウントに公開するまでの手順です。プログラミングの知識がなくても、画面の指示どおりに進めれば終わるように書いています。
+Motteinai を自分の Cloudflare アカウントに公開するまでの手順です。プログラミングの知識がなくても、画面の指示どおりに進めれば終わるように書いています。
 
 - 所要時間：30〜45分
 - 費用：無料（R2 の有効化でクレジットカードの登録を求められますが、無料枠を超えない限り請求はありません。詳しくは [無料で動かせる範囲](#無料で動かせる範囲)）
@@ -75,7 +75,7 @@ https://dash.cloudflare.com/5be04228d09a39d680ab2a4065d42a6b/...
 
 1. 左メニュー **Storage & databases → D1 SQLite Database → Create**
 2. 設定
-   - **Name**：`mottenai`（この名前でないと動きません）
+   - **Name**：`motteinai`（この名前でないと動きません）
    - **Data location**：`Location`（自動）のまま。確実にしたいときは「Provide a location hint」で **Asia-Pacific**
    - **Specify jurisdiction**：選ばない（EUなどの法規制向けの設定）
 3. **Create** を押す
@@ -87,7 +87,7 @@ https://dash.cloudflare.com/5be04228d09a39d680ab2a4065d42a6b/...
 2. 初回は **Add R2 subscription to my account** を押す
    - クレジットカードの登録を求められます。**今日の請求は $0**、月 10GB などの無料枠を超えたときだけ課金されます
 3. **Create bucket**
-   - **Bucket name**：`mottenai-images`（この名前でないと動きません。あとから変更できません）
+   - **Bucket name**：`motteinai-images`（この名前でないと動きません。あとから変更できません）
    - **Location**：`Automatic`
    - **Default Storage Class**：**Standard**（無料枠は Standard のみ）
    - 公開設定は**変えない**（非公開のまま。画像はアプリ経由で本人にだけ見せます）
@@ -95,7 +95,7 @@ https://dash.cloudflare.com/5be04228d09a39d680ab2a4065d42a6b/...
 
 ### 1-5. サブドメインを確認する
 
-公開URL `https://mottenai.<サブドメイン>.workers.dev` の `<サブドメイン>` 部分です。アカウントに1つだけで、このアカウントで作る全アプリで共通です。
+公開URL `https://motteinai.<サブドメイン>.workers.dev` の `<サブドメイン>` 部分です。アカウントに1つだけで、このアカウントで作る全アプリで共通です。
 
 1. 左メニュー **Compute → Workers & Pages**
 2. 右側「Account details」の **Subdomain** を見る
@@ -124,7 +124,7 @@ https://dash.cloudflare.com/5be04228d09a39d680ab2a4065d42a6b/...
 "d1_databases": [
   {
     "binding": "DB",
-    "database_name": "mottenai",
+    "database_name": "motteinai",
     "database_id": "ここに Database ID",
     "migrations_dir": "migrations"
   }
@@ -138,7 +138,7 @@ push すると GitHub Actions（**Actions** タブの「CI / Deploy」）が動�
 3. Cloudflare への公開（`wrangler deploy`）
 4. Google のシークレットを Worker へ反映（この時点では未登録なので、黄色い警告を出して飛ばします。手順 4 で解消）
 
-`wrangler deploy` まで成功していれば、ログに `https://mottenai.<サブドメイン>.workers.dev` が表示されます。
+`wrangler deploy` まで成功していれば、ログに `https://motteinai.<サブドメイン>.workers.dev` が表示されます。
 
 ---
 
@@ -148,14 +148,14 @@ push すると GitHub Actions（**Actions** タブの「CI / Deploy」）が動�
 
 1. <https://console.cloud.google.com> を開く
 2. 画面上部のプロジェクト選択 → **新しいプロジェクト**
-3. プロジェクト名：`mottenai` → **作成**
+3. プロジェクト名：`motteinai` → **作成**
 4. 作ったプロジェクトが上部で選ばれていることを確認する
 
 ### 3-2. 同意画面（ブランディング）
 
 1. 検索欄に「Google Auth Platform」と入れて開く（または **APIとサービス → OAuth 同意画面**）
 2. **開始** を押して入力する
-   - **アプリ名**：`Mottenai`（ログイン時に表示されます）
+   - **アプリ名**：`Motteinai`（ログイン時に表示されます）
    - **ユーザーサポートメール**：自分の Gmail
    - **対象**：**外部**
    - **連絡先情報**：自分の Gmail
@@ -172,7 +172,7 @@ push すると GitHub Actions（**Actions** タブの「CI / Deploy」）が動�
 
 > 「アプリを公開」を押すと誰でもログインできるようになりますが、その前にブランディングページでホームページとプライバシーポリシーのURLを埋める必要があります。不特定多数に公開したくなったときの作業です。
 >
-> テスト中の「7日で期限切れ」の制限は Google のトークンの話で、Mottenai は自前で30日間ログインを保つので影響しません。
+> テスト中の「7日で期限切れ」の制限は Google のトークンの話で、Motteinai は自前で30日間ログインを保つので影響しません。
 
 ### 3-4. クライアントを作る
 
@@ -182,9 +182,9 @@ push すると GitHub Actions（**Actions** タブの「CI / Deploy」）が動�
 | 項目 | 入力 |
 |---|---|
 | アプリケーションの種類 | **ウェブ アプリケーション** |
-| 名前 | `Mottenai Web`（管理用。ログインする人には見えません） |
-| 承認済みの JavaScript 生成元 | `https://mottenai.ttk1010.workers.dev`（**末尾に `/` を付けない**） |
-| 承認済みのリダイレクト URI | `https://mottenai.ttk1010.workers.dev/auth/google/callback` |
+| 名前 | `Motteinai Web`（管理用。ログインする人には見えません） |
+| 承認済みの JavaScript 生成元 | `https://motteinai.ttk1010.workers.dev`（**末尾に `/` を付けない**） |
+| 承認済みのリダイレクト URI | `https://motteinai.ttk1010.workers.dev/auth/google/callback` |
 | このクライアントを AI 搭載エージェントに使用する | **チェックしない** |
 
 3. **作成** を押すと **クライアントID** と **クライアントシークレット** が表示される。両方コピーする
@@ -210,7 +210,7 @@ push すると GitHub Actions（**Actions** タブの「CI / Deploy」）が動�
 
 ## 5. スマホで確認
 
-1. `https://mottenai.<サブドメイン>.workers.dev` を開く
+1. `https://motteinai.<サブドメイン>.workers.dev` を開く
 2. **Googleで続ける** → テストユーザーに追加した Gmail でログイン
 3. 服を1着撮って登録する
 4. 数秒後に確認する

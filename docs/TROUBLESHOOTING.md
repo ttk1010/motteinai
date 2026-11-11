@@ -26,7 +26,7 @@
 
 ### `d1 migrations apply` が失敗する
 
-- **Symptom:** `Run npx wrangler d1 migrations apply mottenai --remote` で `Couldn't find a D1 DB` や `Authentication error [code: 10000]`
+- **Symptom:** `Run npx wrangler d1 migrations apply motteinai --remote` で `Couldn't find a D1 DB` や `Authentication error [code: 10000]`
 - **Cause:** 次のどれか
   - `wrangler.jsonc` の `database_id` が初期値（`00000000-...`）のまま、または別のデータベースのID
   - APIトークンに `D1 Edit` の権限がない
@@ -48,7 +48,7 @@
 
 ### サブドメインを変えたら、古い URL が開けない
 
-- **Symptom:** `mottenai.<古い名前>.workers.dev` が表示されない
+- **Symptom:** `motteinai.<古い名前>.workers.dev` が表示されない
 - **Cause:** サブドメインはアカウントに1つだけなので、変更すると URL も変わる
 - **Fix:** 新しい URL を使う。Google のクライアントの「JavaScript 生成元」と「リダイレクト URI」も新しい URL に書き換える（書き換えないとログインできない）
 
@@ -61,10 +61,10 @@
 - **Symptom:** 「Googleで続ける」を押すと Google の画面で `redirect_uri_mismatch`
 - **Cause:** Google のクライアントに登録したリダイレクト URI と、アプリの URL が1文字でも違う
 - **Fix:** Google Auth Platform → **クライアント** → 作ったクライアントを開き、次と完全に一致させる
-  - `https://mottenai.<サブドメイン>.workers.dev/auth/google/callback`
+  - `https://motteinai.<サブドメイン>.workers.dev/auth/google/callback`
 - **Notes:** `http` と `https`、末尾の `/`、サブドメインの綴りをよく見る。保存してから反映まで数分かかることがある
 
-### `アクセスをブロック: Mottenai は Google の審査プロセスを完了していません`
+### `アクセスをブロック: Motteinai は Google の審査プロセスを完了していません`
 
 - **Symptom:** ログインしようとすると `403: access_denied`
 - **Cause:** アプリが「テスト中」で、ログインしようとした Gmail がテストユーザーに入っていない

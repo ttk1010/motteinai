@@ -1,5 +1,5 @@
 // 画面の外枠だけをキャッシュする最小限のサービスワーカー。API と画像はキャッシュしない。
-const CACHE = "mottenai-shell-v1";
+const CACHE = "motteinai-shell-v1";
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(["/", "/manifest.webmanifest", "/icons/icon.svg"])));

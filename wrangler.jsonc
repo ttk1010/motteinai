@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "mottenai",
+  "name": "motteinai",
   "main": "worker/index.ts",
   "compatibility_date": "2026-10-01",
   "compatibility_flags": ["nodejs_compat"],
@@ -12,12 +12,12 @@
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "mottenai",
-      "database_id": "4d0ca3cc-0808-41d2-9468-2f4efbad9b0a",
+      "database_name": "motteinai",
+      "database_id": "REPLACE_WITH_NEW_D1_ID",
       "migrations_dir": "migrations"
     }
   ],
-  "r2_buckets": [{ "binding": "BUCKET", "bucket_name": "mottenai-images" }],
+  "r2_buckets": [{ "binding": "BUCKET", "bucket_name": "motteinai-images" }],
   "images": { "binding": "IMAGES" },
   "ai": { "binding": "AI" },
   "vars": {

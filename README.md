@@ -1,14 +1,14 @@
 <p align="center">
-  <img src="docs/assets/icon.png" width="96" alt="Mottenai icon">
+  <img src="docs/assets/icon.png" width="96" alt="Motteinai icon">
 </p>
 
-# Mottenai
+# Motteinai
 
 > Check your closet before you buy.
 
 **English** · [日本語 (README.ja.md)](README.ja.md)
 
-[![CI / Deploy](https://github.com/ttk1010/mottenai/actions/workflows/deploy.yml/badge.svg)](https://github.com/ttk1010/mottenai/actions/workflows/deploy.yml)
+[![CI / Deploy](https://github.com/ttk1010/motteinai/actions/workflows/deploy.yml/badge.svg)](https://github.com/ttk1010/motteinai/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=white)](https://workers.cloudflare.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -23,9 +23,9 @@
 
 ## What is this?
 
-Mottenai is a mobile-first closet app for one specific problem: **you go shopping, can't tell what to buy, and come home with something you already own or can't wear with anything.**
+Motteinai is a mobile-first closet app for one specific problem: **you go shopping, can't tell what to buy, and come home with something you already own or can't wear with anything.**
 
-Snap the item in the store. Mottenai compares it with everything in your closet and answers in a few seconds:
+Snap the item in the store. Motteinai compares it with everything in your closet and answers in a few seconds:
 
 - **Buy / Hold / Skip**, decided by rules, not vibes
 - **+N outfits**: how many new combinations it unlocks with clothes you own
@@ -34,7 +34,7 @@ Snap the item in the store. Mottenai compares it with everything in your closet 
 
 It also ranks **what to buy next** by how many outfits each piece would add, and suggests **today's outfit** for the weather, always including one piece you haven't worn.
 
-The name puns on *mottainai* (wasteful) and *motte-nai* (don't own it): buy what you don't have, not what you do.
+The name puns on *mottainai* (wasteful) and *motte-inai* (don't have it), one letter apart: buy what you don't have, not what you do.
 
 > 📖 The README is in English and Japanese. The design docs (`docs/`, ADRs) and the app UI are in **Japanese**.
 
@@ -104,7 +104,7 @@ npm run lint
 2. **GitHub**: four Actions secrets, plus your `database_id` in `wrangler.jsonc`
 3. **Google**: an OAuth consent screen, test users, and a web client
 
-After that, every push to `main` runs lint, typecheck, tests and build, applies D1 migrations, deploys the Worker and syncs the Google secrets. Your app goes live at `https://mottenai.<subdomain>.workers.dev`.
+After that, every push to `main` runs lint, typecheck, tests and build, applies D1 migrations, deploys the Worker and syncs the Google secrets. Your app goes live at `https://motteinai.<subdomain>.workers.dev`.
 
 Stuck? See [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md).
 
@@ -138,7 +138,7 @@ Cloudflare Worker (Hono)
 
 ## Philosophy
 
-Mottenai is **not** a fashion feed and **not** a shopping funnel. It's a second opinion that remembers your closet when you can't.
+Motteinai is **not** a fashion feed and **not** a shopping funnel. It's a second opinion that remembers your closet when you can't.
 
 - **Answer at the moment of decision**: the store, not the morning
 - **Numbers over adjectives**: `87% similar`, `+12 outfits`, no taglines

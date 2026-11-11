@@ -44,7 +44,7 @@ export function LoginScreen() {
         transition={{ delay: 0.12 }}
         className="mt-5 text-[28px] font-bold tracking-tight"
       >
-        Mottenai
+        Motteinai
       </motion.h1>
       <motion.div
         initial={{ y: 20, opacity: 0 }}
