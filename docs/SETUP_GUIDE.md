@@ -118,7 +118,7 @@ https://dash.cloudflare.com/5be04228d09a39d680ab2a4065d42a6b/...
 
 ### 2-2. database_id を設定して公開する
 
-`wrangler.jsonc` の `database_id` を、手順 1-3 の Database ID に書き換えて `main` に push します。
+`wrangler.jsonc` の `database_id`（初期値は `REPLACE_WITH_NEW_D1_ID`）を、手順 1-3 の Database ID に書き換えて `main` に push します。初期値のままだと、公開は警告を出して飛ばされます。
 
 ```jsonc
 "d1_databases": [
